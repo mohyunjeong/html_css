@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선언방식</title>
+
+    <style>
+
+        /* 내부 스타일 방식 : style 태그를 사용해서 css 적용 */
+        #no2 {
+            color: blue !important;
+            background-color: yellow;
+        }
+
+    </style>
+
+    <!-- 외부 스타일 방식 : link 태그를 사용해서 외부 css를 적용
+                           보안 유지를 위해서, 정보 표현(html)과 분리를 위해서
+                           link 태그가 쓰인 순서대로 적용 -->
+    <link rel="stylesheet" href="./Ex20외부스타일.css">
+
+    <!-- import 방식 : style 태그 내부에 @import를 사용해서 css 적용
+                       css 적용 순서가 예측 불가능 -->
+    <style>
+
+        @import url('./Ex20임포트방식.css');
+
+    </style>
+
+</head>
+<body>
+    
+    <h1 style="color: red;">1. 인라인 방식</h1>
+    <h1 id="no2">2. 내부 선언 방식</h1>
+    <h1 id="no3">3. 외부 선언 방식</h1>
+    <h1 id="no4">4. import 방식</h1>
+
+</body>
+</html>

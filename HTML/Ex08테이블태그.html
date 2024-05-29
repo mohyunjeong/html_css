@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+</head>
+<body>
+    
+    <!-- table 태그 : 표 형태(행과 열을 가진 형태) -->
+    <table border="1" align="center"> <!-- table에 align="center"을 주면 테이블 자체의 위치가 가운데가 된다! -->
+
+        <caption>뉴진스 정보</caption>
+
+        <!-- 행(가로) 태그 -->
+        <!-- table row 약자 -->
+        <!-- 첫번째 줄 -->
+        <tr bgcolor="yellow">
+            <!-- th * n : <th> 태그 n개 생성 -->
+            <!-- 컬럼 제목 태그 -->
+            <!-- table heading 약자 -->
+            <th width="50px">나이</th>
+            <th width="100px">이름</th>
+        </tr>
+
+        <!-- 두번째 줄 -->
+        <tr align="center">
+            <!-- 열(세로) 태그 -->
+            <!-- table data 약자 -->
+            <td rowspan="2">18</td>
+            <!-- rowspan : 행 병합 -->
+            <td>민지</td>
+        </tr>
+
+        <!-- 세번째 줄 -->
+        <tr align="center">
+            <!-- <td>18</td> -->
+            <td>하니</td>
+        </tr>
+        
+        <!-- 네번째 줄 -->
+        <tr align="center">
+            <td>17</td>
+            <td>다니엘</td>
+        </tr>
+
+        <!-- 다섯번째 줄 -->
+        <tr align="center">
+            <td>16</td>
+            <td>해린</td>
+        </tr>
+
+        <!-- 여섯번째 줄 -->
+        <tr align="center">
+            <td>14</td>
+            <td>혜인</td>
+        </tr>
+
+        <!-- 일곱번째 줄 -->
+        <tr align="center">
+            <!-- colspan="2" : 2칸 만큼 합치겠다 -->
+            <td colspan="2">비 고</td>
+            <!-- colspan : 열 병합 -->
+        </tr>
+
+    </table>
+
+</body>
+</html>

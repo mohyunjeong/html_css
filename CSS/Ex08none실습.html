@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>none 실습</title>
+</head>
+
+    <style>
+
+        span {
+            display: none;
+        }
+
+        /* 
+        a 태그에 마우스를 올리면
+        a 태그 옆에 있는 span가 화면에 나타나도록!
+         */
+
+        a:hover+span {
+            display: inline-block;
+        }
+
+    </style>
+
+<body>
+    
+    <!-- 링크, 밑 줄 a 태그! -->
+    <a href="https://www.naver.com">네이버</a> 
+    <span class="span">www.naver.com</span>
+    <br>
+
+    <a href="https://www.daum.net">다음</a>
+    <span class="span">www.daum.net</span>
+
+
+</body>
+</html>

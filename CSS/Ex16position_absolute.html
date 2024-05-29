@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_absolute</title>
+
+    <style>
+
+        #parents {
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+            position: absolute;
+        }
+
+        #child {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(111, 145, 240, 0.918);
+            position: absolute;
+            /* 
+            position: absolute;
+            부모 요소 내에서 절대적인 위치를 설정
+            만약 부모 요소중에서 position 값이
+            relative, absolute, fixed인 요소가 없다면
+            body 태그를 기준으로 움직인다.
+            */
+            top: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="parents">
+        부모태그
+        <div id="child"></div>
+    </div>
+
+</body>
+</html>
